@@ -1,0 +1,24 @@
+{
+  "name": "webpack-complete-guide",
+  "version": "1.0.0",
+  "description": "webpack project starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shruthi48/webpack-complete-guide.git"
+  },
+  "author": "Shruthi Hariprakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shruthi48/webpack-complete-guide/issues"
+  },
+  "homepage": "https://github.com/Shruthi48/webpack-complete-guide#readme",
+  "devDependencies": {
+    "webpack": "^3.8.0"
+  }
+}
