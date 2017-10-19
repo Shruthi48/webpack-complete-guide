@@ -149,6 +149,45 @@ ReactDOM.render(
    use: 'babel-loader'
 }
 ```
+<hr>
+<b> session - 7 RimRaf (cleaning dist and handling multiple templates) </b> <br>
+
+1. npm install -D rimraf
+2. create a script in package.json
+```
+"scripts" : {
+"dev" : "webpack-dev-server",
+"prod" : "npm run clean && webpack -p",
+"clean" : "rimraf ./dist/*"  //deletes the files under dist folder
+}
+```
+
+3. for creating multiple bundles , create multiple entries 
+```
+ entry : {
+ app: './src/app.js',
+ contact: './src/contact.js'
+ },
+ output: {
+  filename: [name].bundle.js
+ }
+ 
+ ```
+ 4. add another htmlWebpackPlugin
+ ```
+ new htmlWebpackPlugin({
+            title: 'Contact Page',
+            filename: 'contact.html',
+            template: './src/contact.html',
+            minify: {
+                collapseInlineTagWhitespace: true,
+                collapseWhitespace: true
+            },
+            chunks: ['contact'], // spicifies which chunk of the bundle to be used 
+            hash: true
+        });
+ ```
+<hr>
 
 
 
