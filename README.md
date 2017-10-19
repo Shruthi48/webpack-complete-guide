@@ -188,6 +188,17 @@ ReactDOM.render(
         });
  ```
 <hr>
+<b> session-8 dealing with the pug </b> <br>
+
+1. run `npm install -D pug pug-html-loader'`
+2. add another rule 
+```
+  {
+     test: /.pug$/,
+     use: ['html-loader','pug-html-loader']
+  
+  }
+ ```
 
 
 
