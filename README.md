@@ -1,6 +1,6 @@
 # webpack 3.0 ^
 
-`npm run dev` - to start the application <h4> <br>
+`npm run dev` - <h4> to start the application </h4> <br>
 
 <b> session 1 - Installing webpack and adding a config </b> <br>
 
