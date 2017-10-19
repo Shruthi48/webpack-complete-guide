@@ -114,6 +114,38 @@ devServer: {
         open: true  //opens new window when you run command `npm run dev`
     }
  ```
+ <hr>
+ <b> session- 6 installing react </b> <br>
+ 
+ 1. npm install --save react , react-dom
+ 2. npm install --save babel babel-preset-react babel-preset-es2015  //es6 & es5 comptibility reasons
+ 3. npm install --save-dev babel-loader babel-core
+ 4. add presets in .babelrc file
+ 
+ ```
+ {
+    "presets": ["es2015","react"]
+ }
+```
+5. add the following in app.js to get started with react
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById('root')
+);
+```
+6. add `<div id="root"> </div> in the html`
+7. add a rule in webpack.config
+```
+{
+   test: /.js$/,
+   exclude: /node_modules/,
+   use: 'babel-loader'
+}
+```
 
 
 
