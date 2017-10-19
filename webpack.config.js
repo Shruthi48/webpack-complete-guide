@@ -1,6 +1,7 @@
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-var extractTextPlugin = require('extract-text-webpack-plugin');
+const extractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -33,7 +34,8 @@ module.exports = {
         compress: true,
         port: 9000,
         stats: "errors-only",
-        open: true
+        open: true,
+        hot: true
     },
     plugins: [
         new htmlWebpackPlugin({
@@ -59,8 +61,10 @@ module.exports = {
         }),
         new extractTextPlugin({
             filename: "bundle.css",
-            disable: false,
+            disable: true,
             allChunks: true
-        })
+        }),
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ]
 }

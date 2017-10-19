@@ -1,0 +1,78 @@
+Html Webpack Plugin:<pre>
+  Error: Child compilation failed:
+  Module parse failed: Unexpected token (1:0)
+  You may need an appropriate loader to handle this file type.
+  | <!DOCTYPE html><html lang="en"><head><title></title><script type="text/javascript">if   (foo) bar(1 + 5)</script></head><body><h1>Header is now included</h1><h1>Pug - node temp  late engine</h1><div class="col" id="container"><p>Get on it!</p><p>Pug is a terse and s  imple templating language with a
+  | strong focus on performance and powerful features.</p></div></body></html>:
+  SyntaxError: Unexpected token (1:0)
+  
+  - compiler.js:76 
+    [webpack-complete-guide]/[html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:304 compile
+    [webpack-complete-guide]/[webpack]/lib/Compiler.js:304:11
+  
+  - Compiler.js:514 applyPluginsAsync.err
+    [webpack-complete-guide]/[webpack]/lib/Compiler.js:514:14
+  
+  - Tapable.js:202 next
+    [webpack-complete-guide]/[tapable]/lib/Tapable.js:202:11
+  
+  - CachePlugin.js:78 Compiler.<anonymous>
+    [webpack-complete-guide]/[webpack]/lib/CachePlugin.js:78:5
+  
+  - Tapable.js:206 Compiler.applyPluginsAsyncSeries
+    [webpack-complete-guide]/[tapable]/lib/Tapable.js:206:13
+  
+  - Compiler.js:511 compilation.seal.err
+    [webpack-complete-guide]/[webpack]/lib/Compiler.js:511:11
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [webpack-complete-guide]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:680 self.applyPluginsAsync.err
+    [webpack-complete-guide]/[webpack]/lib/Compilation.js:680:19
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [webpack-complete-guide]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:671 self.applyPluginsAsync.err
+    [webpack-complete-guide]/[webpack]/lib/Compilation.js:671:11
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [webpack-complete-guide]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:666 self.applyPluginsAsync.err
+    [webpack-complete-guide]/[webpack]/lib/Compilation.js:666:10
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [webpack-complete-guide]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:662 sealPart2
+    [webpack-complete-guide]/[webpack]/lib/Compilation.js:662:9
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [webpack-complete-guide]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:605 Compilation.seal
+    [webpack-complete-guide]/[webpack]/lib/Compilation.js:605:8
+  
+  - Compiler.js:508 applyPluginsParallel.err
+    [webpack-complete-guide]/[webpack]/lib/Compiler.js:508:17
+  
+  - Tapable.js:289 
+    [webpack-complete-guide]/[tapable]/lib/Tapable.js:289:11
+  
+  - Compilation.js:507 _addModuleChain
+    [webpack-complete-guide]/[webpack]/lib/Compilation.js:507:11
+  
+  - Compilation.js:477 processModuleDependencies.err
+    [webpack-complete-guide]/[webpack]/lib/Compilation.js:477:14
+  
+  - next_tick.js:131 _combinedTickCallback
+    internal/process/next_tick.js:131:7
+  
+  - next_tick.js:180 process._tickCallback
+    internal/process/next_tick.js:180:9
+  
+</anonymous></pre>
