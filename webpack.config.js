@@ -1,5 +1,6 @@
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+var extractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -7,6 +8,19 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js'
     },
+    module: {
+        rules: [
+            {
+                test: /.scss$/,
+                use: extractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: ["css-loader", "sass-loader"],
+                    publicPath: "/dist"
+                })
+            }
+        ]
+    },
+
     plugins: [
         new htmlWebpackPlugin({
             title: 'Webpack Complete Guide',
@@ -16,6 +30,11 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true
+        }),
+        new extractTextPlugin({
+            filename: "bundle.css",
+            disable: false,
+            allChunks: true
         })
     ]
 }
