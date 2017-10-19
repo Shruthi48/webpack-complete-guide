@@ -89,7 +89,7 @@ module.exports = {
 }
 ```
 <hr>
-<b> session - 5 installing dev-server </b> <br>
+<b> session - 4 installing dev-server </b> <br>
 
 1. wanna see your webpage running on a port , so you need a server 
    run ` npm install webpack-dev-server`
@@ -102,7 +102,7 @@ module.exports = {
    
    ` difference between webpack -d and webpack-dev-server is it allows you to serve the index.html on a port and all the bundled files that gets generated will be stored in memory rather than your existing code base` <br>
    
-<b> session - 6 configuring dev-server </b> <br>
+<b> session - 5 configuring dev-server </b> <br>
 1. add the following snippet into webpack.config to add configurations to your dev-server
 
 ```
