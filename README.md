@@ -200,7 +200,7 @@ ReactDOM.render(
   }
  ```
 <hr>
-<b> session -9 Hot Module Replacement <b>
+<b> session -9 Hot Module Replacement </b>
  
  1. add hot: true in devServer
  ```
