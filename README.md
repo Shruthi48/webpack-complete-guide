@@ -1,5 +1,7 @@
 # webpack 3.0 ^
 
+`npm run dev` - to start the application <h4> <br>
+
 <b> session 1 - Installing webpack and adding a config </b> <br>
 1. install node , npm and webpack (both globally and locally)
 2. `npm init` to `create package.json`
