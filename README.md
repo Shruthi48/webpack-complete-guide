@@ -88,4 +88,32 @@ module.exports = {
     ]
 }
 ```
+<hr>
+<b> session - 5 installing dev-server </b> <br>
+
+1. wanna see your webpage running on a port , so you need a server 
+   run ` npm install webpack-dev-server`
+2. change script to use webpack-dev-server
+   ```
+    script {
+     "dev": "webpack-dev-server"
+     }
+   ```
+   
+   ` difference between webpack -d and webpack-dev-server is it allows you to serve the index.html on a port and all the bundled files that gets generated will be stored in memory rather than your existing code base` <br>
+   
+<b> session - 6 configuring dev-server </b> <br>
+1. add the following snippet into webpack.config to add configurations to your dev-server
+
+```
+devServer: {
+        contentBase: path.resolve(__dirname, 'dist'),
+        compress: true, //gzips the bundles
+        port: 9000,
+        stats: "errors-only",  //hides build messages and keeps it clean
+        open: true  //opens new window when you run command `npm run dev`
+    }
+ ```
+
+
 
