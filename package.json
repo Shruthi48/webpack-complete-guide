@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack -d --watch",
-    "prod": "webpack -p"
+    "dev": "webpack-dev-server",
+    "prod": "webpack -p",
+    "dev-d": "webpack -d"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,7 @@
     "style-loader": "^0.19.0",
     "webpack": "^3.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "webpack-dev-server": "^2.9.2"
+  }
 }
