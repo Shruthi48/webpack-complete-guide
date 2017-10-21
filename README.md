@@ -199,6 +199,29 @@ ReactDOM.render(
   
   }
  ```
-
+<hr>
+<b> session -9 Hot Module Replacement </b>
+ 
+ 1. add hot: true in devServer
+ ```
+ devServer: {
+        contentBase: path.resolve(__dirname, 'dist'),
+        compress: true,
+        port: 9000,
+        stats: "errors-only",
+        open: true,
+        hot: true
+    }
+  ```
+  2. include in webpack.config
+  ```
+  const webpack = require('webpack')
+  new webpack.NamedModulesPlugin(),
+  new webpack.HotModuleReplacementPlugin()
+  
+  ```
+  3. remove extractTextplugin related code , cause it won't work with hot module replacement
+  <hr>
+  
 
 
