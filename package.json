@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
-    "prod": "webpack -p",
-    "dev-d": "webpack -d"
+    "prod": "npm run clean && NODE_ENV=production webpack -p",
+    "dev-d": "webpack -d",
+    "clean": "rimraf ./dist/*"
   },
   "repository": {
     "type": "git",
