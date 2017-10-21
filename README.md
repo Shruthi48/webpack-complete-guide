@@ -231,3 +231,22 @@ ReactDOM.render(
 
 <hr>
 
+<b> session-11 loading images </b> <br>
+
+1. npm install `file-loader` `image-webpack-loader`
+2. use ` <img src=<%= require('./images/mylogo.png') %> />` in html to include image
+3. add a rule to webpack.config
+```
+{
+                test: /\.(png|svg|jpe?g|gif)$/,
+                use: [
+                    'file-loader?name=[name].[ext]&outputPath=images/' ,
+                    'image-webpack-loader'
+                ]
+}
+```
+4. scss changes to include image 
+```
+ background: url('./images/mylogo.png');     
+ ```
+
