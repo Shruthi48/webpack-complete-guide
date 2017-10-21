@@ -1,6 +1,11 @@
 body {
-    background: yellowgreen;
+    background: url('./images/mylogo.png');     
+    height: 30%;
+    min-height: 30%;
+    float: left;
+   
     p {
       color: red;
     }
+  
 }

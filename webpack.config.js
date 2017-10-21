@@ -32,6 +32,13 @@ module.exports = {
                 test: /.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
+            },
+            {
+                test: /\.(png|svg|jpe?g|gif)$/,
+                use: [
+                    'file-loader?name=[name].[ext]&outputPath=images/' ,
+                    'image-webpack-loader'
+                ]
             }
         ]
     },
