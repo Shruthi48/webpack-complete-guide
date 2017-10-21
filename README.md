@@ -223,5 +223,11 @@ ReactDOM.render(
   3. remove extractTextplugin related code , cause it won't work with hot module replacement
   <hr>
   
+<b> session-10 Production and development Environment configs </b> <br>
 
+1. you need extractTextWebpackPlugin for production mode but you need hot loading for development mode , it can be achieved by having different configs for different environments .
+2. set NODE_ENV = production when running the command , and access it using process.env.NODE_ENV 
+3. Turn on and off the feature by using a flag or variable.
+
+<hr>
 
