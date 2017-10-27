@@ -1,11 +1,25 @@
-body {
-    background: url('./images/mylogo.png');     
-    height: 30%;
-    min-height: 30%;
-    float: left;
+// body {
+//     background: url('./images/mylogo.png');     
+//     height: 30%;
+//     min-height: 30%;
+//     float: left;
    
-    p {
-      color: red;
-    }
+//     p {
+//       color: red;
+//     }
   
+// }
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mapId {
+  height: 100%;
 }

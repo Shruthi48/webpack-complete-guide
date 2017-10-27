@@ -2,10 +2,24 @@
 <html>
     <head>
         <title> <%= htmlWebpackPlugin.options.title %> </title>
+          <meta name="viewport"
+                content="initial-scale=1.0, user-scalable=no" />
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3ND0O8Paa_a16HoVqmx8zxRdlmXvJpwM"></script> 
+        <script type="text/javascript" >
+          function initialize() {
+              var mapOptions = {
+                  center : new google.maps.LatLng(0,0),
+                  zoom: 4
+              };
+              var map = new google.maps.Map(document.getElementById('mapId'),mapOptions);
+          }
+          google.maps.event.addDomListener(window,"load",initialize);
+        </script>   
     </head>
     <body>
         <p>This is webpack complete guide</p>
         <div id="root"> </div>
+        <div id="mapId"></div>
         <img src=<%= require('./images/mylogo.png') %> />
     </body>
 </html>
